@@ -204,6 +204,9 @@
               <button onclick="startPageOpen()">Показать</button>
             </p>
             <p>Что бы показать стартовую, нужно вызвать JS функцию <code>startPageOpen()</code></p><br>
+            <h2>Кнопки поделиться</h2>
+            <hr>
+            <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus" data-size="s"></div><br>
             <h2>Стикеры</h2>
             <hr>
             <div onselectstart="return false">
@@ -534,6 +537,26 @@
     </div>
     <!-- END: start-page-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="//yastatic.net/share2/share.js"></script>
+    <script>
+      var myShare = document.getElementById('my-share');
+      
+      var share = Ya.share2(myShare, {
+      content: {
+          url: 'https://yandex.com',
+          title: 'Yandex'
+      },
+      
+      contentByService: {
+          twitter: {
+              url: 'https://ya.ru',
+              title: 'Яндекс',
+              hashtags: 'yandex,share'
+          }
+      }
+      });
+      
+    </script>
     <script src="assets/js/main.js"></script>
     <script>
       if (readyjs) {

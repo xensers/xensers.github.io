@@ -234,7 +234,7 @@
           <div class="layout__side__top">
           </div>
           <div class="layout__side__center">
-            <div class="rotate"><a class="header__link menu__link" href="home.html">Назад в офис<span class="separator"></span></a></div>
+            <div class="rotate"><a class="back-to-office menu__link" href="home.html">Назад в офис</a></div>
           </div>
           <div class="layout__side__bottom">
           </div>
@@ -283,6 +283,26 @@
     </div>
     <!-- END: start-page-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="//yastatic.net/share2/share.js"></script>
+    <script>
+      var myShare = document.getElementById('my-share');
+      
+      var share = Ya.share2(myShare, {
+      content: {
+          url: 'https://yandex.com',
+          title: 'Yandex'
+      },
+      
+      contentByService: {
+          twitter: {
+              url: 'https://ya.ru',
+              title: 'Яндекс',
+              hashtags: 'yandex,share'
+          }
+      }
+      });
+      
+    </script>
     <script src="assets/js/main.js"></script>
     <script>
       readyjs.push(loadCaseDetailedPage);
