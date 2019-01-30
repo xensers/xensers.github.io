@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Много сделал! - О проекте</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/preloader.css">
     <script src="assets/js/preloader.js"></script>
@@ -155,7 +156,7 @@
             <div class="header__icons">
               <div class="header__icons__wrap"><a class="header__icons_lang" href="#"><span class="lang">RUS</span></a><a class="header__icons_mixed" href="#"><span class="icon mix"></span></a><a class="header__icons_back" href="#"><span class="icon arrow-left"></span></a><a class="header__icons_go-back" href="#top"><span class="icon back"></span></a></div>
             </div>
-            <div class="header__callback-link"><a class="header__link" href="about.html#feedback">Обратная связь</a></div>
+            <div class="header__callback-link"><a class="header__link menu__link" href="about.html#feedback">Обратная связь</a></div>
           </div>
           <!-- END: header-->
         </div>
@@ -181,32 +182,30 @@
             <div class="first-section">
               <div class="first-section__left">
                 <div class="first-section__figure">
-                  <div class="oval-marker"></div><img class="first-section__figure-img" src="assets/images/aboutpage/man.png" alt="alt" srcset="assets/images/aboutpage/man@2x.png 2x">
+                  <div class="oval-marker display-delay" data-delay="3000"></div><img class="first-section__figure-img wow steps slow" src="assets/images/aboutpage/man.png" alt="alt" srcset="assets/images/aboutpage/man@2x.png 2x">
                 </div>
               </div>
               <div class="first-section__right">
-                <div class="h1 first-section__title">Всем привет!</div>
+                <div class="h1 first-section__title wow rotateInUpLeft fast" data-wow-delay="2s">Всем привет!</div>
                 <div class="first-section__content">
-                  <p><span class="zi-2">Этот свежий </span><span class="marker-1">молодой человек – я, </span><br>доктор <a class="link" href="#do-now">прокрастинологических наук,</a></p>
-                  <p>воспитатель обезьянок <br><a class="link" href="#reviews">в полевых корпоративных условиях</a></p>
-                  <p>и почетный мастер <a class="link" href="#book">клуба Джедаев,</a><br><span class="marker-1">Максим Дорофеев…</span></p>
+                  <p class="wow fadeInRight fast" data-wow-delay="2.5s"><span class="zi-2">Этот свежий </span><span class="marker-1">молодой человек – я, </span><br>доктор <a class="link" href="#do-now">прокрастинологических наук,</a></p>
+                  <p class="wow fadeInRight" data-wow-delay="3s">воспитатель обезьянок <br><a class="link" href="#reviews">в полевых корпоративных условиях</a></p>
+                  <p class="wow fadeInRight fast" data-wow-delay="3.5s">и почетный мастер <a class="link" href="#book">клуба Джедаев,</a><br><span class="marker-1">Максим Дорофеев…</span></p>
                 </div>
-                <div class="first-section__bottom">
-                  <div class="first-section__bottom-text">
-                     Что это все <br> значит?</div>
+                <div class="first-section__bottom wow bounceInUp" data-wow-delay="4s">
+                  <div class="first-section__bottom-text">Что это все <br> значит?</div>
                 </div>
               </div>
             </div>
             <!-- END: first-section-->
-            <div class="trust-us" id="reviews">
+            <div class="trust-us wow fadeIn" id="reviews">
               <div class="trust-us__left">
-                <h2 class="title trust-us__title">
-                   Я знаю, как <span class="marker-title">сделать</span><br><span class="zi-1">вас и вашу команду <br> эффективной</span></h2>
+                <h2 class="title trust-us__title">Я знаю, как <span class="marker-title">сделать</span><br><span class="zi-1">вас и вашу команду <br> эффективной</span></h2>
                 <p>
-                   На сегодняшний момент мое любимое <br> дело — обучение 
+                  На сегодняшний момент мое любимое <br> дело — обучение 
                   людей техникам личной <br> эффективности:
                 </p>
-                <h3 class="subtitle trus-us__subtitle">«Как <span class="marker-2">приносить больше </span> пользы своей компании, оставаясь при этом <br>        <span class="marker-2">свободным и творческим </span>человеком»</h3>
+                <h3>«Как <span class="marker-2">приносить больше </span> пользы своей компании, оставаясь при этом <br><span class="marker-2">свободным и творческим </span>человеком»</h3>
                 <p>Мне доверились такие компании, которые <br> по контракту я не могу называть… <br>Но на счет картинок никто ничего не говорил…</p>
               </div>
               <div class="trust-us__right">
@@ -343,7 +342,7 @@
               </div>
             </div>
             <!-- END: trust-us-->
-            <div class="tell-technique" id="book">
+            <div class="tell-technique wow fadeIn" id="book">
               <div class="tell-technique__left"><img class="tell-technique__book" src="assets/images/aboutpage/book.png" srcset="assets/images/aboutpage/book@2x.png 2x" alt="" role="presentation"/>
                 <div class="audioplayer">
                   <audio preload="true">
@@ -377,11 +376,11 @@
               </div>
             </div>
             <!-- END: tell-technique-->
-            <div class="how-began" id="history">
+            <div class="how-began wow fadeIn" id="history">
               <div class="began-slider">
                 <div class="began-slider__wrapper swiper-wrapper">
                   <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-1.png" alt="" role="presentation"/>
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-0.png" alt="" role="presentation"/>
                     </div>
                     <div class="began-slider__slide-right">
                       <div class="began-slider__title title">Как все начиналось
@@ -397,12 +396,119 @@
                     <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-1.png" alt="" role="presentation"/>
                     </div>
                     <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Другой <br>заголовок
+                      <div class="began-slider__title title">Школа
                       </div>
-                      <div class="began-slider__year marker-1">1989 - 1994
+                      <div class="began-slider__year marker-1">1988-1997
                       </div>
                       <div class="began-slider__content">
-                        <p>Родился в Москве, вечером 15 апреля 1981 года в семье помещика Дорофеева и моей матушки, </p>
+                        <p>Учился в очень интересной (в то время) школе</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-2.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Студенчество
+                      </div>
+                      <div class="began-slider__year marker-1">1997
+                      </div>
+                      <div class="began-slider__content">
+                        <p>Пошел учиться на физфак МГУ. Успешно. Но, бывало всякое...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-3.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Работа, путешествия
+                      </div>
+                      <div class="began-slider__year marker-1">2001 – 2008
+                      </div>
+                      <div class="began-slider__content">
+                        <p>Работал на разные компании. Катался в разные командировки.</p>
+                        <p>То в край огромных кактусов.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-4.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Работа, путешествия
+                      </div>
+                      <div class="began-slider__year marker-1">2001 – 2008
+                      </div>
+                      <div class="began-slider__content">
+                        <p>То просто по Европе.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-6.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Азия
+                      </div>
+                      <div class="began-slider__year marker-1">2013
+                      </div>
+                      <div class="began-slider__content">
+                        <p>Покинул Лабораторию Касперского.</p>
+                        <p>Некоторое время провел в Азии.</p>
+                        <p>То в лагерях Тайского бокса.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-7.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Азия
+                      </div>
+                      <div class="began-slider__year marker-1">2013
+                      </div>
+                      <div class="began-slider__content">
+                        <p>С переменным, кстати, успехом…</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-8.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Азия
+                      </div>
+                      <div class="began-slider__year marker-1">2013
+                      </div>
+                      <div class="began-slider__content">
+                        <p>То по монастырям, да развалинам.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-10.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Начал вести тренинги
+                      </div>
+                      <div class="began-slider__year marker-1">2013
+                      </div>
+                      <div class="began-slider__content">
+                        <p>Понял, что у меня есть, чему учить людей.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="began-slider__slide swiper-slide">
+                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-11.png" alt="" role="presentation"/>
+                    </div>
+                    <div class="began-slider__slide-right">
+                      <div class="began-slider__title title">Начал вести тренинги
+                      </div>
+                      <div class="began-slider__year marker-1">2013
+                      </div>
+                      <div class="began-slider__content">
+                        <p>И кое-где даже с размахом</p>
                       </div>
                     </div>
                   </div>
@@ -410,13 +516,13 @@
                 <div class="began-slider__pagination">
                 </div>
                 <div class="swiper-btn swiper-btn_prev began-slider__prev">
-                  <div class="swiper-btn__round">       
+                  <div class="swiper-btn__round">
                   </div>
-                  <div class="swiper-btn__hover">      
+                  <div class="swiper-btn__hover">
                   </div>
                 </div>
                 <div class="swiper-btn swiper-btn_next began-slider__next">
-                  <div class="swiper-btn__round">       
+                  <div class="swiper-btn__round">
                   </div>
                   <div class="swiper-btn__hover">
                   </div>
@@ -426,7 +532,7 @@
               </div>
             </div>
             <!-- END: how-began-->
-            <div class="do-now" id="do-now">
+            <div class="do-now wow fadeIn" id="do-now">
               <div class="do-now__left">
                 <div class="do-now__title title"> <span class="marker-title">Что я делаю <br> </span><span class="zi-1">сейчас</span>
                 </div>
@@ -445,11 +551,7 @@
               <div class="do-now__right">
                 <div class="do-now__video-wrapper">
                   <div class="do-now__oval oval-marker">
-                  </div>
-                  <div class="do-now__video-container youtube" data-video="https://www.youtube.com/watch?v=uGlzWZyVrBk">         
-                    <div class="do-now__play-btn">
-                    </div>
-                  </div>
+                  </div><a class="youtube" href="https://www.youtube.com/watch?v=uGlzWZyVrBk"></a>
                 </div>
                 <div class="do-now__subtitle subtitle">Открытые тренинги 
                 </div>
@@ -457,7 +559,7 @@
               </div>
             </div>
             <!-- END: do-now-->
-            <div class="feedback" id="feedback">
+            <div class="feedback wow fadeIn" id="feedback">
               <div class="feedback__left">
                 <div class="feedback__label marker-1">обратная связь
                 </div>
@@ -536,7 +638,7 @@
       </div>
       <!-- END: layout__wrapper-->
     </div>
-    <!-- END: layout-->
+    <!-- END: layout--><a class="layout__crby" href="https://zephyrlab.ru" target="_blank"><img src="assets/images/zephyr/ZEPHYR_CrBy_Light_01.svg" alt="Сделано в ZEPHYRLAB"></a>
     <div class="start-page">
       <div class="start-page__header">
         <div class="start-page__logo"><a href="/"><img class="logo" src="assets/images/logo-inverse.png" alt="bar" srcset="assets/images/logo-inverse@2x.png 2x"></a></div>
@@ -559,27 +661,14 @@
     </div>
     <!-- END: start-page-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="//yastatic.net/share2/share.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
       var myShare = document.getElementById('my-share');
-      
-      var share = Ya.share2(myShare, {
-      content: {
-          url: 'https://yandex.com',
-          title: 'Yandex'
-      },
-      
-      contentByService: {
-          twitter: {
-              url: 'https://ya.ru',
-              title: 'Яндекс',
-              hashtags: 'yandex,share'
-          }
-      }
-      });
+      new WOW().init();
       
     </script>
-    <script src="assets/js/main.js"></script>
     <script>
       var feedbackIcons = new trustUsFeedback();
       var feedbackInputs = new inputsHandler();

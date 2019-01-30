@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Много сделал! - Мыслительный процесс коровы</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/preloader.css">
     <script src="assets/js/preloader.js"></script>
@@ -155,7 +156,7 @@
             <div class="header__icons">
               <div class="header__icons__wrap"><a class="header__icons_lang" href="#"><span class="lang">RUS</span></a><a class="header__icons_mixed" href="#"><span class="icon mix"></span></a><a class="header__icons_back" href="#"><span class="icon arrow-left"></span></a><a class="header__icons_go-back" href="#top"><span class="icon back"></span></a></div>
             </div>
-            <div class="header__callback-link"><a class="header__link" href="about.html#feedback">Обратная связь</a></div>
+            <div class="header__callback-link"><a class="header__link menu__link" href="about.html#feedback">Обратная связь</a></div>
           </div>
           <!-- END: header-->
         </div>
@@ -260,7 +261,7 @@
       </div>
       <!-- END: layout__wrapper-->
     </div>
-    <!-- END: layout-->
+    <!-- END: layout--><a class="layout__crby" href="https://zephyrlab.ru" target="_blank"><img src="assets/images/zephyr/ZEPHYR_CrBy_Light_01.svg" alt="Сделано в ZEPHYRLAB"></a>
     <div class="start-page">
       <div class="start-page__header">
         <div class="start-page__logo"><a href="/"><img class="logo" src="assets/images/logo-inverse.png" alt="bar" srcset="assets/images/logo-inverse@2x.png 2x"></a></div>
@@ -283,27 +284,14 @@
     </div>
     <!-- END: start-page-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="//yastatic.net/share2/share.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
       var myShare = document.getElementById('my-share');
-      
-      var share = Ya.share2(myShare, {
-      content: {
-          url: 'https://yandex.com',
-          title: 'Yandex'
-      },
-      
-      contentByService: {
-          twitter: {
-              url: 'https://ya.ru',
-              title: 'Яндекс',
-              hashtags: 'yandex,share'
-          }
-      }
-      });
+      new WOW().init();
       
     </script>
-    <script src="assets/js/main.js"></script>
     <script>
       readyjs.push(loadCaseDetailedPage);
       
