@@ -17,6 +17,7 @@
     </script>
   </head>
   <body>
+    <div id="top"></div>
     <div id="preloader" style="z-index: 900;">
       <div class="preloader__stiker" style="transform: rotate(-8deg);">
         <div class="preloader__stiker__warp preloader__stiker--to-right">
@@ -138,7 +139,7 @@
         </div>
       </div>
     </div>
-    <script>runPreloader(false);</script>
+    <script>Preloader.run();</script>
     <!-- END: preloader-->
     <div class="layout homepage">
       <div class="layout__wrapper">
@@ -359,7 +360,14 @@
                   </div>
                 </div>
                 <div class="homepage__cases__end">
-                  <p>Кажется все...</p>
+                  <div class="to-small">
+                    <div class="show-all-cases">
+                      <div class="btn">Показать все</div>
+                    </div>
+                  </div>
+                  <div class="from-medium">
+                    <p>Кажется все...</p>
+                  </div>
                 </div>
               </div>
               <div class="homepage__article">
@@ -448,12 +456,10 @@
     </div>
     <!-- END: start-page-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="//yastatic.net/share2/share.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
       var myShare = document.getElementById('my-share');
-      new WOW().init();
       
     </script>
     <script>

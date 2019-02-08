@@ -17,6 +17,7 @@
     </script>
   </head>
   <body>
+    <div id="top"></div>
     <div id="preloader" style="z-index: 900;">
       <div class="preloader__stiker" style="transform: rotate(-8deg);">
         <div class="preloader__stiker__warp preloader__stiker--to-right">
@@ -138,7 +139,7 @@
         </div>
       </div>
     </div>
-    <script>runPreloader(false);</script>
+    <script>Preloader.run();</script>
     <!-- END: preloader-->
     <div class="layout aboutpage">
       <div class="layout__wrapper">
@@ -179,26 +180,26 @@
         <div class="layout__body">
           <div class="layout__container">
             <div id="top"></div>
-            <div class="first-section">
+            <div class="first-section" id="first">
               <div class="first-section__left">
                 <div class="first-section__figure">
-                  <div class="oval-marker display-delay" data-delay="3000"></div><img class="first-section__figure-img wow steps slow" src="assets/images/aboutpage/man.png" alt="alt" srcset="assets/images/aboutpage/man@2x.png 2x">
+                  <div class="oval-marker"></div><img class="first-section__figure-img" src="assets/images/aboutpage/man.png" alt="alt" srcset="assets/images/aboutpage/man@2x.png 2x">
                 </div>
               </div>
               <div class="first-section__right">
-                <div class="h1 first-section__title wow rotateInUpLeft fast" data-wow-delay="2s">Всем привет!</div>
+                <div class="h1 first-section__title">Всем привет!</div>
                 <div class="first-section__content">
-                  <p class="wow fadeInRight fast" data-wow-delay="2.5s"><span class="zi-2">Этот свежий </span><span class="marker-1">молодой человек – я, </span><br>доктор <a class="link" href="#do-now">прокрастинологических наук,</a></p>
-                  <p class="wow fadeInRight" data-wow-delay="3s">воспитатель обезьянок <br><a class="link" href="#reviews">в полевых корпоративных условиях</a></p>
-                  <p class="wow fadeInRight fast" data-wow-delay="3.5s">и почетный мастер <a class="link" href="#book">клуба Джедаев,</a><br><span class="marker-1">Максим Дорофеев…</span></p>
+                  <p><span class="zi-2">Этот свежий </span><span class="marker-1">молодой человек – я, </span><br>доктор <a class="link" href="#do-now">прокрастинологических наук,</a></p>
+                  <p>воспитатель обезьянок <br><a class="link" href="#reviews">в полевых корпоративных условиях</a></p>
+                  <p>и почетный мастер <a class="link" href="#book">клуба Джедаев,</a><br><span class="marker-1">Максим Дорофеев…</span></p>
                 </div>
-                <div class="first-section__bottom wow bounceInUp" data-wow-delay="4s">
+                <div class="first-section__bottom">
                   <div class="first-section__bottom-text">Что это все <br> значит?</div>
                 </div>
               </div>
             </div>
             <!-- END: first-section-->
-            <div class="trust-us wow fadeIn" id="reviews">
+            <div class="trust-us" id="reviews">
               <div class="trust-us__left">
                 <h2 class="title trust-us__title">Я знаю, как <span class="marker-title">сделать</span><br><span class="zi-1">вас и вашу команду <br> эффективной</span></h2>
                 <p>
@@ -342,262 +343,290 @@
               </div>
             </div>
             <!-- END: trust-us-->
-            <div class="tell-technique wow fadeIn" id="book">
-              <div class="tell-technique__left"><img class="tell-technique__book" src="assets/images/aboutpage/book.png" srcset="assets/images/aboutpage/book@2x.png 2x" alt="" role="presentation"/>
-                <div class="audioplayer">
-                  <audio preload="true">
-                    <source src="assets/media/audio.mp3"/>
-                  </audio>
-                  <div class="audioplayer__button play">
-                    <div class="audioplayer__button_icon"></div>
-                  </div>
-                  <div class="audioplayer__timeline">
-                    <div class="audioplayer__playhead"></div>
-                  </div>
-                </div><a class="tell-technique__link link" href="">Послушать отрывок (читаю сам)</a>
-              </div>
-              <div class="tell-technique__right">
-                <div class="tell-technique__title title">Расказываю, <br>как познать технику джедаев
+            <div id="book">
+              <div class="tell-technique">
+                <div class="tell-technique__left"><img class="tell-technique__book" src="assets/images/aboutpage/book.png" srcset="assets/images/aboutpage/book@2x.png 2x" alt="" role="presentation"/>
+                  <div class="audioplayer">
+                    <audio preload="true">
+                      <source src="assets/media/audio.mp3"/>
+                    </audio>
+                    <div class="audioplayer__button play">
+                      <div class="audioplayer__button_icon"></div>
+                    </div>
+                    <div class="audioplayer__timeline">
+                      <div class="audioplayer__playhead"></div>
+                    </div>
+                  </div><a class="tell-technique__link link" href="">Послушать отрывок (читаю сам)</a>
                 </div>
-                <p>
-                   Об этом я написал целую книгу <br><span class="marker-1">«Джедайские техники. </span><span class="zi-2">Как воспитать свою обезьяну, </span>опустошить инбокс и сберечь 
-                  мыслетопливо»      
-                </p><br><a class="link" href="https://www.mann-ivanov-ferber.ru/books/dzhedajskie-texniki" target="_blank">Подробнее о книге</a><br><br>
-                <p class="with_round">
-                   О том, что такое обезьянка, <br>
-                  и почему мы предпочитаем проверить <br>
-                  новости, почту и старые фотографии <br>
-                  написанию диплома, началу нового <br>
-                  проекта или завершению <br>
-                  начатого…
-                </p>
-                <div class="tell-technique__next">Как я пришел к <br> такой жизни
+                <div class="tell-technique__right">
+                  <div class="tell-technique__title title">Расказываю, <br>как познать технику джедаев
+                  </div>
+                  <p>
+                     Об этом я написал целую книгу <br><span class="marker-1">«Джедайские техники. </span><span class="zi-2">Как воспитать свою обезьяну, </span>опустошить инбокс и сберечь 
+                    мыслетопливо»      
+                  </p><br><a class="link" href="https://www.mann-ivanov-ferber.ru/books/dzhedajskie-texniki" target="_blank">Подробнее о книге</a><br><br>
+                  <p class="with_round">
+                     О том, что такое обезьянка, <br>
+                    и почему мы предпочитаем проверить <br>
+                    новости, почту и старые фотографии <br>
+                    написанию диплома, началу нового <br>
+                    проекта или завершению <br>
+                    начатого…
+                  </p>
+                  <div class="tell-technique__next">Как я пришел к <br> такой жизни
+                  </div>
                 </div>
               </div>
             </div>
             <!-- END: tell-technique-->
-            <div class="how-began wow fadeIn" id="history">
-              <div class="began-slider">
-                <div class="began-slider__wrapper swiper-wrapper">
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-0.png" alt="" role="presentation"/>
+            <div id="history">
+              <div class="how-began">
+                <div class="began-slider">
+                  <div class="began-slider__wrapper swiper-wrapper">
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-0.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Как все начиналось
+                        </div>
+                        <div class="began-slider__year marker-1">1981
+                        </div>
+                        <div class="began-slider__content">
+                          <p>Родился в Москве, вечером 15 апреля 1981 года в семье помещика Дорофеева и моей матушки, </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Как все начиналось
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-1.png" alt="">
+                        </div>
                       </div>
-                      <div class="began-slider__year marker-1">1981
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Школа
+                        </div>
+                        <div class="began-slider__year marker-1">1988-1997
+                        </div>
+                        <div class="began-slider__content">
+                          <p>Учился в очень интересной (в то время) школе</p>
+                        </div>
                       </div>
-                      <div class="began-slider__content">
-                        <p>Родился в Москве, вечером 15 апреля 1981 года в семье помещика Дорофеева и моей матушки, </p>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Студенчество
+                        </div>
+                        <div class="began-slider__year marker-1">1997
+                        </div>
+                        <div class="began-slider__content">
+                          <p>Пошел учиться на физфак МГУ. Успешно. Но, бывало всякое...</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Работа, путешествия
+                        </div>
+                        <div class="began-slider__year marker-1">2001 – 2008
+                        </div>
+                        <div class="began-slider__content">
+                          <p>Работал на разные компании. Катался в разные командировки.</p>
+                          <p>То в край огромных кактусов.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-4.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Работа, путешествия
+                        </div>
+                        <div class="began-slider__year marker-1">2001 – 2008
+                        </div>
+                        <div class="began-slider__content">
+                          <p>То просто по Европе.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Азия
+                        </div>
+                        <div class="began-slider__year marker-1">2013
+                        </div>
+                        <div class="began-slider__content">
+                          <p>Покинул Лабораторию Касперского.</p>
+                          <p>Некоторое время провел в Азии.</p>
+                          <p>То в лагерях Тайского бокса.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Азия
+                        </div>
+                        <div class="began-slider__year marker-1">2013
+                        </div>
+                        <div class="began-slider__content">
+                          <p>С переменным, кстати, успехом…</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-8.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Азия
+                        </div>
+                        <div class="began-slider__year marker-1">2013
+                        </div>
+                        <div class="began-slider__content">
+                          <p>То по монастырям, да развалинам.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-10.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Начал вести тренинги
+                        </div>
+                        <div class="began-slider__year marker-1">2013
+                        </div>
+                        <div class="began-slider__content">
+                          <p>Понял, что у меня есть, чему учить людей.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="began-slider__slide swiper-slide">
+                      <div class="began-slider__slide-left">
+                        <div class="began-slider__photo"><img src="assets/images/aboutpage/slider/photo-11.png" alt="">
+                        </div>
+                      </div>
+                      <div class="began-slider__slide-right">
+                        <div class="began-slider__title title">Начал вести тренинги
+                        </div>
+                        <div class="began-slider__year marker-1">2013
+                        </div>
+                        <div class="began-slider__content">
+                          <p>И кое-где даже с размахом</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-1.png" alt="" role="presentation"/>
+                  <div class="began-slider__pagination">
+                  </div>
+                  <div class="swiper-btn swiper-btn_prev began-slider__prev">
+                    <div class="swiper-btn__round">
                     </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Школа
-                      </div>
-                      <div class="began-slider__year marker-1">1988-1997
-                      </div>
-                      <div class="began-slider__content">
-                        <p>Учился в очень интересной (в то время) школе</p>
-                      </div>
+                    <div class="swiper-btn__hover">
                     </div>
                   </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-2.png" alt="" role="presentation"/>
+                  <div class="swiper-btn swiper-btn_next began-slider__next">
+                    <div class="swiper-btn__round">
                     </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Студенчество
-                      </div>
-                      <div class="began-slider__year marker-1">1997
-                      </div>
-                      <div class="began-slider__content">
-                        <p>Пошел учиться на физфак МГУ. Успешно. Но, бывало всякое...</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-3.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Работа, путешествия
-                      </div>
-                      <div class="began-slider__year marker-1">2001 – 2008
-                      </div>
-                      <div class="began-slider__content">
-                        <p>Работал на разные компании. Катался в разные командировки.</p>
-                        <p>То в край огромных кактусов.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-4.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Работа, путешествия
-                      </div>
-                      <div class="began-slider__year marker-1">2001 – 2008
-                      </div>
-                      <div class="began-slider__content">
-                        <p>То просто по Европе.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-6.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Азия
-                      </div>
-                      <div class="began-slider__year marker-1">2013
-                      </div>
-                      <div class="began-slider__content">
-                        <p>Покинул Лабораторию Касперского.</p>
-                        <p>Некоторое время провел в Азии.</p>
-                        <p>То в лагерях Тайского бокса.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-7.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Азия
-                      </div>
-                      <div class="began-slider__year marker-1">2013
-                      </div>
-                      <div class="began-slider__content">
-                        <p>С переменным, кстати, успехом…</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-8.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Азия
-                      </div>
-                      <div class="began-slider__year marker-1">2013
-                      </div>
-                      <div class="began-slider__content">
-                        <p>То по монастырям, да развалинам.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-10.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Начал вести тренинги
-                      </div>
-                      <div class="began-slider__year marker-1">2013
-                      </div>
-                      <div class="began-slider__content">
-                        <p>Понял, что у меня есть, чему учить людей.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="began-slider__slide swiper-slide">
-                    <div class="began-slider__slide-left"><img class="began-slider__photo" src="assets/images/aboutpage/slider/photo-11.png" alt="" role="presentation"/>
-                    </div>
-                    <div class="began-slider__slide-right">
-                      <div class="began-slider__title title">Начал вести тренинги
-                      </div>
-                      <div class="began-slider__year marker-1">2013
-                      </div>
-                      <div class="began-slider__content">
-                        <p>И кое-где даже с размахом</p>
-                      </div>
+                    <div class="swiper-btn__hover">
                     </div>
                   </div>
                 </div>
-                <div class="began-slider__pagination">
+                <div class="how-began__arrow">
                 </div>
-                <div class="swiper-btn swiper-btn_prev began-slider__prev">
-                  <div class="swiper-btn__round">
-                  </div>
-                  <div class="swiper-btn__hover">
-                  </div>
-                </div>
-                <div class="swiper-btn swiper-btn_next began-slider__next">
-                  <div class="swiper-btn__round">
-                  </div>
-                  <div class="swiper-btn__hover">
-                  </div>
-                </div>
-              </div>
-              <div class="how-began__arrow">
               </div>
             </div>
             <!-- END: how-began-->
-            <div class="do-now wow fadeIn" id="do-now">
-              <div class="do-now__left">
-                <div class="do-now__title title"> <span class="marker-title">Что я делаю <br> </span><span class="zi-1">сейчас</span>
+            <div id="do-now">
+              <div class="do-now">
+                <div class="do-now__left">
+                  <div class="do-now__title title"> <span class="marker-title">Что я делаю <br> </span><span class="zi-1">сейчас</span>
+                  </div>
+                  <p>
+                    Следите регулярно за обновлениями в моем Youtube канале, 
+                    блоге в ЖЖ, слушайте бухтелки и прожекторыпрокрастиналогии. 
+                    Присоединяйтесь!
+                  </p><br>
+                  <p><a class="link" href="http://www.youtube.com/user/Cartmendum?sub_confirmation=1" target="_blank">Подписаться на канал</a> (Нас&nbsp;уже&nbsp;261&nbsp;027)</p><br><br><br>
+                  <div class="do-now__subtitle subtitle">Корпоративное обучение
+                  </div>
+                  <p><span class="zi-2">Если </span><span class="marker-1">вы считаете, что ваша </span><span class="zi-2"> команда может быть эффективней, лучше  </span><span class="marker-1">и счастливей -</span><span class="zi-2"> вы можете заказать </span> у меня пробную встречу, 
+                     где мы определим, как пройдет работа по апгрейду. 
+                  </p><br><a class="do-now__link link" href="#">Подробнее здесь</a>
                 </div>
-                <p>
-                  Следите регулярно за обновлениями в моем Youtube канале, 
-                  блоге в ЖЖ, слушайте бухтелки и прожекторыпрокрастиналогии. 
-                  Присоединяйтесь!
-                </p><br>
-                <p><a class="link" href="http://www.youtube.com/user/Cartmendum?sub_confirmation=1" target="_blank">Подписаться на канал</a> (Нас&nbsp;уже&nbsp;261&nbsp;027)</p><br><br><br>
-                <div class="do-now__subtitle subtitle">Корпоративное обучение
+                <div class="do-now__right">
+                  <div class="do-now__video-wrapper">
+                    <div class="do-now__oval oval-marker">
+                    </div><a class="youtube" href="https://www.youtube.com/watch?v=uGlzWZyVrBk"></a>
+                  </div>
+                  <div class="do-now__subtitle subtitle">Открытые тренинги 
+                  </div>
+                  <p>я провожу редко, <br> но вот <a class="link" href="#">ближайшие.</a></p>
                 </div>
-                <p><span class="zi-2">Если </span><span class="marker-1">вы считаете, что ваша </span><span class="zi-2"> команда может быть эффективней, лучше  </span><span class="marker-1">и счастливей -</span><span class="zi-2"> вы можете заказать </span> у меня пробную встречу, 
-                   где мы определим, как пройдет работа по апгрейду. 
-                </p><br><a class="do-now__link link" href="#">Подробнее здесь</a>
-              </div>
-              <div class="do-now__right">
-                <div class="do-now__video-wrapper">
-                  <div class="do-now__oval oval-marker">
-                  </div><a class="youtube" href="https://www.youtube.com/watch?v=uGlzWZyVrBk"></a>
-                </div>
-                <div class="do-now__subtitle subtitle">Открытые тренинги 
-                </div>
-                <p>я провожу редко, <br> но вот <a class="link" href="#">ближайшие.</a></p>
               </div>
             </div>
             <!-- END: do-now-->
-            <div class="feedback wow fadeIn" id="feedback">
-              <div class="feedback__left">
-                <div class="feedback__label marker-1">обратная связь
-                </div>
-                <div class="feedback__arrow">
-                </div>
-              </div>
-              <div class="feedback__right">
-                <div class="feedback-form">
-                  <div class="feedback-form__header">
-                    <h2 class="feedback-form__title">Напишите мне <br> сюда:
-                    </h2>
-                    <div class="feedback-form__subtitle">(если хотите)
-                    </div>
+            <div id="feedback">
+              <div class="feedback">
+                <div class="feedback__left">
+                  <div class="feedback__label marker-1">обратная связь
                   </div>
-                  <form class="feedback-form__form">
-                    <div class="feedback-form__control"><input class="feedback-form__input" type="text"/>
-                      <div class="feedback-form__placeholder">Как вас там
+                  <div class="feedback__arrow">
+                  </div>
+                </div>
+                <div class="feedback__right">
+                  <div class="feedback-form">
+                    <div class="feedback-form__header">
+                      <h2 class="feedback-form__title">Напишите мне <br> сюда:
+                      </h2>
+                      <div class="feedback-form__subtitle">(если хотите)
                       </div>
                     </div>
-                    <div class="feedback-form__control"><input class="feedback-form__input" type="text"/>
-                      <div class="feedback-form__placeholder">По какому поводу пишете
+                    <form class="feedback-form__form">
+                      <div class="feedback-form__control"><input class="feedback-form__input" type="text"/>
+                        <div class="feedback-form__placeholder">Как вас там
+                        </div>
                       </div>
-                    </div>
-                    <div class="feedback-form__control feedback-form__control_message"><input class="feedback-form__input" type="text"/>
-                      <div class="feedback-form__placeholder">Сюда сообщение
+                      <div class="feedback-form__control"><input class="feedback-form__input" type="text"/>
+                        <div class="feedback-form__placeholder">По какому поводу пишете
+                        </div>
                       </div>
-                    </div>
-                    <div class="feedback-form__control"><input class="feedback-form__input" type="text"/>
-                      <div class="feedback-form__placeholder">И куда вам на это ответить?
+                      <div class="feedback-form__control feedback-form__control_message"><input class="feedback-form__input" type="text"/>
+                        <div class="feedback-form__placeholder">Сюда сообщение
+                        </div>
                       </div>
-                    </div>
-                    <button class="feedback-form__btn"> 
-                      <div class="feedback-form__btn-round">
+                      <div class="feedback-form__control"><input class="feedback-form__input" type="text"/>
+                        <div class="feedback-form__placeholder">И куда вам на это ответить?
+                        </div>
                       </div>
-                      <div class="feedback-form__btn-text">Отправить
-                      </div>
-                    </button>
-                  </form>
+                      <button class="feedback-form__btn"> 
+                        <div class="feedback-form__btn-round">
+                        </div>
+                        <div class="feedback-form__btn-text">Отправить
+                        </div>
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -661,18 +690,19 @@
     </div>
     <!-- END: start-page-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="//yastatic.net/share2/share.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
       var myShare = document.getElementById('my-share');
-      new WOW().init();
       
     </script>
     <script>
-      var feedbackIcons = new trustUsFeedback();
-      var feedbackInputs = new inputsHandler();
-      initSlider();
+      readyjs.push(function(){
+        var feedbackIcons = new trustUsFeedback();
+        var feedbackInputs = new inputsHandler();
+        initSlider();
+        window.addEventListener('load', firstSectionAnimation);
+      });
       
     </script>
     <script>
