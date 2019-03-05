@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Много сделал! - Документация</title>
+    <meta name="description" content="Помогая компании, успевай жить для себя">
+    <meta property="og:title" content="Документация">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://xensers.github.io/mnogosdelal/">
+    <meta property="og:image" content="http://xensers.github.io/mnogosdelal/assets/images/logo.svg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="202">
+    <meta property="og:image:height" content="116">
+    <meta property="og:description" content="Помогая компании, успевай жить для себя">
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <script src="assets/js/preloader.js"></script>
+    <link rel="stylesheet" href="assets/fonts/libs.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script>
+      var readyjs = new Array();
+      
+    </script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <div id="preloader" style="z-index: 900;">
+      <div class="preloader__stiker" style="transform: rotate(-8deg);">
+        <div class="preloader__stiker__warp preloader__stiker--to-right">
+          <div class="preloader__stiker__front">
+            <div class="preloader__stiker__content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M7.3 10.5v-.3l.3.3h2.5c.9 0 1.8.2 2.5.6.8.4 1.4 1 1.7 1.7.3.5.4 1.2.5 2.1l-.8 3.2.6 7.9c-.1 2.3-1.8 3.6-5.1 4.1-5.1-1-7.7-2.4-7.6-4.1l.6-.6 6.7 2.2h1.3c.7 0 1.3-.2 1.6-.7.3-.5.5-1.2.6-2.2l-.9-5.4H8.9c-1.2 0-2.2-.3-2.9-.9-.8-.6-1.4-1.6-1.9-2.9v-.3l.3-2.2-.3-1.6c.6-.6 1.7-.9 3.2-.9zm5.4 3.5l-1.9-1.6H8.2c-.5 0-.9.8-1.4 2.5l-.2.7c0 .5.3 1 .8 1.4.5.4 1.1.6 1.9.6.7 0 1.3-.2 1.8-.7.5-.5 1-1.3 1.5-2.5V14zm8.9-3.5v-.3l.3.3h2.5c.9 0 1.8.2 2.5.6.8.4 1.4 1 1.7 1.7.3.5.4 1.2.5 2.1l-.9 3.2.6 7.9c-.1 2.3-1.8 3.6-5.1 4.1-5.1-1-7.7-2.4-7.6-4.1l.6-.6 6.7 2.2h1.3c.7 0 1.3-.2 1.6-.7s.5-1.2.6-2.2l-.9-5.3h-2.9c-1.2 0-2.2-.3-2.9-.9-.8-.6-1.4-1.6-1.9-2.9v-.3l.3-2.2-.3-1.6c.7-.7 1.8-1 3.3-1zM27 14l-1.9-1.6h-2.5c-.5 0-.9.8-1.4 2.5l-.2.7c0 .5.3 1 .8 1.4.5.4 1.1.6 1.9.6.7 0 1.3-.2 1.8-.7.5-.5 1-1.3 1.5-2.5V14zm3.8 9l.3-.3h.4l.4.1c.8.2 1.2.5 1.2.7 0 .2-.5.4-1.4.6 0 0-.2 0-.4.1-.4-.3-.5-.7-.5-1.2zm6.9-3l.3.4c-.1.5-.9 2-2.4 4.3-.2.3-.4.7-.7 1.1l-.3.8c-.3.8-.6 1.4-.9 2-.3.5-.6.8-.7.8h-.1c-.1 0-.3-.2-.4-.6l3.4-6.7c.3-.6.6-1.1 1-1.5.3-.4.6-.6.8-.6zM36 27.9l.4-.6h.3c.5.3.7.6.7 1l-.4.3h-.1c-.5 0-.8-.3-.9-.7z" fill="#010101"/></svg></div>
+            <div class="preloader__stiker__back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="preloader__stiker" style="transform: rotate(2deg);">
+        <div class="preloader__stiker__warp preloader__stiker--to-left">
+          <div class="preloader__stiker__front">
+            <div class="preloader__stiker__content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M9.1 10.8l1.6-.6c1.6 0 3 .8 4.1 2.5v.9c-.4.8-1.1 1.3-1.9 1.3-.4-1.5-1.2-2.2-2.2-2.2-1.6 0-3.3 1.2-5 3.6-.7 1-1.4 2.3-2.3 4-.2.8-.3 1.6-.3 2.2 0 1.1.3 1.9.9 2.6 1.5-.8 2.8-1.3 3.8-1.3h1.6c1.2 0 2.2.2 2.9.7.7.5 1.2 1.3 1.6 2.4 0 .4-.1.7-.2.9-.3.6-.9 1-1.8 1.4-.9.4-1.8.6-2.8.6H6.9L5 29.5l-1.7-.8C1.7 27.1.9 25.2.9 22.9c0-2.5.8-4.9 2.4-7.2 1.5-2.3 3.5-3.9 5.8-4.9zM8.5 26l-2.9.6v.9l2.5.3 3.2-.7V27c-.3-.6-.9-.9-1.9-.9h-.9zm16.1-15.2l1.6-.6c1.6 0 3 .8 4.1 2.5v.9c-.4.8-1.1 1.3-1.9 1.3-.4-1.5-1.2-2.2-2.2-2.2-1.6 0-3.3 1.2-5 3.6-.7 1-1.4 2.3-2.3 4-.2.8-.3 1.6-.3 2.2 0 1.1.3 1.9.9 2.6 1.5-.8 2.8-1.3 3.8-1.3h1.6c1.2 0 2.2.2 2.9.7.7.5 1.2 1.3 1.6 2.4 0 .4-.1.7-.2.9-.3.6-.9 1-1.8 1.4-.9.4-1.8.6-2.8.6h-2.2l-1.9-.3-1.7-.8c-1.6-1.6-2.4-3.5-2.4-5.8 0-2.5.8-4.9 2.4-7.2 1.5-2.3 3.5-3.9 5.8-4.9zM24 26l-2.9.6v.9l2.5.3 3.2-.7V27c-.3-.6-.9-.9-1.9-.9H24zm7.8-3.2l.3-.3h.4l.4.1c.8.2 1.2.5 1.2.7 0 .2-.5.4-1.4.6 0 0-.2 0-.4.1-.3-.3-.5-.7-.5-1.2zm7-3l.3.4c-.1.5-.9 2-2.4 4.3-.2.3-.4.7-.7 1.1l-.3.8c-.3.8-.6 1.4-.9 2-.3.5-.6.8-.7.8H34c-.1 0-.3-.2-.4-.6l3.4-6.7c.3-.6.6-1.1 1-1.5.3-.4.6-.6.8-.6zm-1.7 7.9l.4-.6h.3c.5.3.7.6.7 1l-.4.3H38c-.6 0-.9-.3-.9-.7z" fill="#010101"/></svg></div>
+            <div class="preloader__stiker__back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="preloader__stiker" style="transform: rotate(-5deg);">
+        <div class="preloader__stiker__warp preloader__stiker--to-right">
+          <div class="preloader__stiker__front">
+            <div class="preloader__stiker__content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M13.9 11.5v.4c-.5 1.7-2.1 3.6-4.7 5.6l.2.3c1.2.6 2.1 1.1 2.8 1.6.6.5 1.2 1.1 1.7 1.9.4.7.7 1.5.7 2.4v.6c.2 0 .4.3.5.9.2.6.2 1.2.2 1.8 0 1.4-.3 2.3-1 2.9s-1.8.9-3.5 1l-8.7-4.1.1-1.2c0-.3.2-.5.7-.5h.2l8.3 3.5 1.3.1.9-.8v-.3l.1-.9c.1-2.1-.7-3.9-2.6-5.4-.5-.4-1.4-.9-2.5-1.3-.8-.1-1.4-.3-1.8-.6-.4-.3-.6-.8-.6-1.4v-.3l5.6-4.9.1-1.2-1-.1h-.3c-1.7 0-3.8 1-6.2 3.1l-.5-.1v-.6h-.3c2.3-3 4.8-4.5 7.5-4.5.9 0 1.5.2 2 .6.5.2.8.7.8 1.5zm14 0v.4c-.5 1.7-2.1 3.6-4.7 5.6l.2.3c1.2.6 2.1 1.1 2.8 1.6.6.5 1.2 1.1 1.7 1.9.4.7.7 1.5.7 2.4v.6c.2 0 .4.3.5.9.2.6.2 1.2.2 1.8 0 1.4-.3 2.3-1 2.9s-1.8.9-3.5 1l-8.7-4.1.1-1.2c0-.3.2-.5.7-.5h.2l8.3 3.5 1.3.1.9-.8v-.3l.1-.9c.1-2.1-.7-3.9-2.6-5.4-.5-.4-1.4-.9-2.5-1.3-.8-.1-1.4-.3-1.8-.6-.4-.3-.6-.8-.6-1.4v-.3l5.6-4.9.1-1.2-1-.1h-.3c-1.7 0-3.8 1-6.2 3.1l-.5-.1v-.6h-.2c2.3-3 4.8-4.5 7.5-4.5.9 0 1.5.2 2 .6.4.2.7.7.7 1.5zm2.7 11.3l.3-.3h.4l.4.1c.8.2 1.2.5 1.2.7 0 .2-.5.4-1.4.6 0 0-.2 0-.4.1-.4-.3-.5-.7-.5-1.2zm6.9-3l.3.4c-.1.5-.9 2-2.4 4.3-.2.3-.4.7-.7 1.1l-.3.8c-.3.8-.6 1.4-.9 2-.3.5-.6.8-.7.8h-.1c-.1 0-.3-.2-.4-.6l3.4-6.7c.3-.6.6-1.1 1-1.5.3-.4.6-.6.8-.6zm-1.7 7.9l.4-.6h.3c.5.3.7.6.7 1l-.4.3h-.1c-.6 0-.8-.3-.9-.7z" fill="#010101"/></svg></div>
+            <div class="preloader__stiker__back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="preloader__stiker" style="transform: rotate(5deg);">
+        <div class="preloader__stiker__warp preloader__stiker--to-left">
+          <div class="preloader__stiker__front">
+            <div class="preloader__stiker__content"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M20.3 6.9l1.4-1.4h1.8l.4 1.4-1.8 1.5c1.4 2 2.2 3.5 2.2 4.4v.7c0 4-1.9 7.7-5.7 11.3-1.3 1.2-3.2 2.7-5.9 4.3l-.7 1.2c-.6 1.1-1.2 2.1-1.8 2.9-.6.9-1 1.3-1.2 1.4l-.8-.7c1-1.9 1.5-3.5 1.5-4.8-1.1-.4-2-.9-2.6-1.4C5.7 26.5 5 24.5 5 21.8c0-2.5.6-4.8 1.7-7.2 1.2-2.4 2.6-4.1 4.2-5 .5-.3 1.3-.5 2.5-.6 1.2-.7 3.5-1.4 6.9-2.1zM7.9 20.4l-.4 1.8c.3 2.9.9 4.4 1.8 4.4h1.1c.4 0 1.2-1.3 2.3-3.9 1.2-2.7 2.3-5.5 3.2-8.5.2-.6.6-1.9 1.4-3.6h-1.5C11.9 12 10 13.9 10 16.4c-.4 2.1-1.1 3.5-2.1 4zm6.6 3.6v.8h.4c2.1-1.4 3.7-2.7 4.6-3.8 1.8-2 2.6-4 2.6-6v-1.8l-1.5-1.4h-.3c-1.4 1.5-3.4 5.6-5.8 12.2zm12.1-1.1l.3-.3h.5l.4.1c.9.3 1.4.5 1.4.8 0 .2-.6.5-1.7.7 0 0-.2 0-.5.1-.2-.4-.4-.9-.4-1.4zm8-3.4l.3.5c-.1.6-1 2.3-2.8 4.9-.2.3-.5.8-.8 1.3l-.3.9c-.3.9-.7 1.6-1.1 2.2-.4.6-.7.9-.8.9h-.2c-.2 0-.3-.2-.5-.7l3.9-7.7c.3-.6.7-1.2 1.2-1.7.5-.4.9-.7 1.1-.6zm-1.9 9l.5-.7h.3c.5.3.8.7.8 1.2l-.5.3h-.2c-.6 0-.9-.3-.9-.8z" fill="#010101"/></svg></div>
+            <div class="preloader__stiker__back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>Preloader.run();</script>
+    <!-- END: preloader-->
+    <div class="layout">
+      <div class="layout__wrapper">
+        <div class="layout__header">
+          <div class="header">
+            <div class="header__menu-btn menu__burger layout__menu-toggle"><span></span><span></span><span></span></div>
+            <div class="header__logo"><a href="index.html"><img class="logo" src="assets/images/logo.svg" alt="Логотип &quot;Много сделал!&quot;"></a></div>
+            <nav class="header__nav">
+              <ul>
+                <li><a class="header__link menu__link" href="about.html">О проекте</a></li>
+                <li><a class="header__link menu__link" href="index.html#cases">Все кейсы</a></li>
+              </ul>
+            </nav>
+            <div class="header__page-title">Документация</div>
+            <div class="header__icons">
+              <div class="header__icons__wrap"><a class="header__icons_lang" href="#"><span class="lang">RUS</span></a><a class="header__icons_mixed" href="#"><span class="icon mix"></span></a><a class="header__icons_back" href="#"><span class="icon arrow-left"></span></a><a class="header__icons_go-back" href="#top"><span class="icon back"></span></a></div>
+            </div>
+            <div class="header__callback-link"><a class="header__link menu__link" href="about.html#feedback">Обратная связь</a></div>
+          </div>
+          <!-- END: header-->
+        </div>
+        <div class="layout__menu">
+          <div class="layout__container">
+            <menu class="menu">
+              <div class="layout__container">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                  <li class="menu__item"><a class="menu__link" href="index.html#cases">Кейсы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">О проекте</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html#feedback">Обратная связь</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html#do-now">Мероприятия</a></li>
+                </ul>
+              </div>
+            </menu>
+            <!-- END: menu-->
+          </div>
+        </div>
+        <div class="layout__body">
+          <div class="layout__container">
+            <div id="top"></div><br>
+            <h2>Меню </h2>
+            <hr>
+            <ul class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link active" href="doc.html">Документация<code>.active</code></a></li>
+                <li class="menu__item"><a class="menu__link" href="layout-template.html" target="_blank">Просто структурный шаблон</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html" target="_blank">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html#cases" target="_blank">Кейсы</a></li>
+                <li class="menu__item"><a class="menu__link" href="case.html" target="_blank">Страница кейса</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html" target="_blank">
+                    <del>О нас</del></a></li>
+              </ul>
+              <p><strong>Emmet </strong>Сокращение для кода меню:<br><code>ul.menu>ul.menu__list>li.menu__item*6>a.menu__link[#]{Пункт меню $}</code></p>
+            </ul><br>
+            <h2>Прелоавдер</h2>
+            <hr>
+            <p>
+              <button onclick="Preloader.run()">Показать</button>
+            </p>
+            <p>Что бы запустить преловадер, нужно вызвать JS функцию <code>Preloader.run()</code></p><br>
+            <h2>Стартовая страница</h2>
+            <hr>
+            <p>
+              <button onclick="startPageOpen()">Показать</button>
+            </p>
+            <p>Что бы показать стартовую, нужно вызвать JS функцию <code>startPageOpen()</code></p><br>
+            <h2>Кнопки поделиться</h2>
+            <hr>
+            <ul>
+              <li><a class="share twitter">twitter</a></li>
+              <li><a class="share facebook">facebook</a></li>
+              <li><a class="share google">google</a></li>
+              <li><a class="share linkedin">linkedin</a></li>
+              <li><a class="share pinterest">pinterest</a></li>
+              <li><a class="share vk">vk</a></li>
+              <li><a class="share tumblr">tumblr</a></li>
+              <li><a class="share reddit">reddit</a></li>
+              <li><a class="share odnoklassniki">odnoklassniki</a></li>
+            </ul>
+            <div class="share-block">
+              <div class="share-block__title">
+                <p>Понравился кейс? Расшарьте друзьям!</p>
+              </div>
+              <div class="share-block__socals"><a class="share vk"><span class="icon socal-vk"></span></a><a class="share facebook"><span class="icon socal-fb"></span></a><a class="share twitter"><span class="icon socal-tw"></span></a><a class="share twitter"><span class="icon socal-in"></span></a></div>
+            </div><br>
+            <h2>Стикеры</h2>
+            <hr>
+            <div onselectstart="return false">
+              <div class="stikers-group">
+                <div class="stiker"><a class="stiker__title" href="case-1.html">Невпихуемость</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/1.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-1.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-2.html">Инфоман</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/2.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-2.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-3.html">Трудоголик</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/3.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-3.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-4.html">Кругом срочное</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/4.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-4.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-5.html">Руки опережают мысль</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/5.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-5.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-6.html">Все фигачат, а толку нет</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/6.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-6.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-7.html">Любитель мелочи</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/7.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-7.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-8.html">Не минуты простоя</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/8.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-8.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-9.html">Любитель срочного (Это не срочно, значит потом)</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/9.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-9.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-10.html">Я креативный и разносторонне развитый</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/10.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-10.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-11.html">Мыслительный процесс коровы</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/11.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-11.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-12.html">Сжатие/разрежение сроков</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/12.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-12.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stiker"><a class="stiker__title" href="case-13.html">Всегда в последний момент!</a>
+                  <div class="stiker__wrap">
+                    <div class="stiker__inner">
+                      <div class="stiker__outer">
+                        <div class="stiker__front">
+                          <div class="stiker__body" style="background-image: url(assets/images/cases/13.png)"></div>
+                        </div>
+                        <div class="stiker__back"></div>
+                      </div>
+                    </div><a class="stiker__link" href="case-13.html"></a>
+                    <div class="stiker__arena"></div>
+                  </div>
+                </div>
+                <div class="stikers-group__controls">
+                  <div class="stikers-group__prev"></div>
+                  <div class="stikers-group__next"></div>
+                  <div class="stikers-group__dots"></div>
+                </div>
+              </div>
+            </div><br>
+            <form class="stikers-demo-panel">
+              <input type="text" name="cols">
+              <input type="text" name="rows">
+              <input type="checkbox">
+              <button name="ok">OK</button>
+            </form>
+            <script>
+              readyjs.push(function(){
+                console.log('Im Ready!');
+              });
+              
+            </script><br>
+            <h2>Иконки</h2>
+            <hr>
+            <p><span class="icon lang"></span><code>span.icon.lang</code></p>
+            <p><span class="icon mix"></span><code>span.icon.mix</code></p>
+            <p><span class="icon arrow-left"></span><code>span.icon.arrow-left</code></p>
+            <p><span class="icon arrow-top"></span><code>span.icon.arrow-top</code></p>
+            <p><span class="icon back"></span><code>span.icon.back</code></p>
+            <p><span class="icon socal-vk"></span><code>span.icon.socal-vk</code></p>
+            <p><span class="icon socal-fb"></span><code>span.icon.socal-fb</code></p>
+            <p><span class="icon socal-tw"></span><code>span.icon.socal-tw</code></p>
+            <p><span class="icon socal-lj"></span><code>span.icon.socal-lj</code></p>
+            <p><span class="icon socal-yt"></span><code>span.icon.socal-yt</code></p>
+            <p><span class="icon socal-in"></span><code>span.icon.socal-in</code></p><br>
+            <h2>Социальные сети</h2>
+            <hr>pug миксин: <br><code>+socals</code><br>
+            <div class="socals"><a class="socals__item" href="http://vk.com/cartmendum" target="_blank"><span class="icon socal-vk"></span></a><a class="socals__item" href="http://www.facebook.com/maxim.dorofeev" target="_blank"><span class="icon socal-fb"></span></a><a class="socals__item" href="http://twitter.com/cartmendum" target="_blank"><span class="icon socal-tw"></span></a><a class="socals__item" href="http://cartmendum.livejournal.com/" target="_blank"><span class="icon socal-lj"></span></a><a class="socals__item" href="https://www.youtube.com/user/Cartmendum" target="_blank"><span class="icon socal-yt"></span></a></div><br>pug миксин: <br><code>+socals(class="vertical")</code><br>
+            <div class="socals vertical"><a class="socals__item" href="http://vk.com/cartmendum" target="_blank"><span class="icon socal-vk"></span></a><a class="socals__item" href="http://www.facebook.com/maxim.dorofeev" target="_blank"><span class="icon socal-fb"></span></a><a class="socals__item" href="http://twitter.com/cartmendum" target="_blank"><span class="icon socal-tw"></span></a><a class="socals__item" href="http://cartmendum.livejournal.com/" target="_blank"><span class="icon socal-lj"></span></a><a class="socals__item" href="https://www.youtube.com/user/Cartmendum" target="_blank"><span class="icon socal-yt"></span></a></div><br>
+            <h2>Маркеры</h2>
+            <hr>
+            <p><span class="marker-1"> <code>span.marker-1</code></span></p>
+            <p><span class="marker-2"> <code>span.marker-2</code></span></p>
+            <p><span class="marker-3"> <code>span.marker-3</code></span></p>
+            <p><span class="marker-4"> <code>span.marker-4</code></span></p>
+            <p><span class="marker-5"> <code>span.marker-5</code></span></p>
+            <p><span class="marker-title"> <code>span.marker-title</code></span></p><br><code>.oval-marker</code><br>
+            <div class="oval-marker"></div><br>
+            <h2>Типография</h2>
+            <hr>
+            <h1>Заголовок <code>h1</code></h1>
+            <h2>Заголовок <code>h2</code></h2>
+            <h3>Заголовок <code>h3</code></h3>
+            <h4>Заголовок <code>h4</code></h4>
+            <h5>Заголовок <code>h5</code></h5>
+            <h6>Заголовок <code>h6</code></h6>
+            <div class="title">Заголовок<code>.title</code></div>
+            <div class="subtitle">Заголовок<code>.subtitle</code></div>
+            <p><code>p</code> Параграф. Подразделение текста внутри главы, раздела. <br> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Решила правилами даже, имеет текстами маленькая, всеми грамматики, большой взгляд свое lorem большого ручеек заголовок назад если ты страну! Составитель!</p>
+            <p><code>b</code><b>Полужирное начертания шрифта</b></p>
+            <p><code>em</code><em>Шрифт курсивом, придавая тексту значимость.</em></p>
+            <p><code>i</code><i>Шрифт курсивом</i></p>
+            <p><code>small</code><small>Уменьшает размер шрифта на единицу по отношению к обычному тексту.</small></p>
+            <p><code>strong</code><strong>Полужирное начертание шрифта, относится к тегам логической разметки, указывая браузеру на важность текста.</strong></p>
+            <p><code>sub</code><sub>Используется для создания нижних индексов. Сдвигает текст ниже уровня строки, уменьшая его размер.</sub></p>
+            <p><code>sup</code><sup>Используется для создания степеней. Сдвигает текст выше уровня строки, уменьшая его размер.</sup></p>
+            <p><code>ins</code><ins>Выделяет текст в новой версии документа, подчёркивая его.</ins></p>
+            <p><code>del</code>
+              <del>Перечёркивает текст. Используется для выделения текста, удаленного из документа.</del>
+            </p>
+            <p><code>code</code><code>Служит для выделения фрагментов программного кода. Отображается моноширинным шрифтом.</code></p>
+            <p><code>kbd</code><kbd>Отмечает фрагмент как вводимый пользователем с клавиатуры. Отображается моноширинным шрифтом.</kbd></p>
+            <p><code>samp</code><samp>Отмечает фрагмент как вводимый пользователем с клавиатуры. Отображается моноширинным шрифтом.</samp></p>
+            <p><code>pre</code></p>
+            <pre>\n            Позволяет вывести текст на экран, сохранив изначальное форматирование.
+                Пробелы
+            и переносы строк при этом не удаляются.</pre>
+            <p></p>
+            <p><code>abbr</code><abbr>Применяется для форматирования аббревиатур.</abbr></p>
+            <p><code>bdo</code>
+              <bdo>Используется для замещения текущего направления текста, т.е. текст в теге отображается зеркально.</bdo>
+            </p>
+            <p><code>blockquote</code></p>
+            <blockquote>Выделяет цитаты внутри документа, выделяя его отступами и переносами строк.</blockquote>
+            <p></p>
+            <p><code>q</code>
+              <q>Используется для выделения коротких цитат.</q>
+            </p>
+            <p><code>cite</code>
+              <cite>Применяется для выделения цитат, названий произведений, сносок на другие документы.</cite>
+            </p>
+            <p><code>dfn</code>
+              <dfn>Позволяет выделить текст как определение. Несмотря на наличие специального тега, рекомендуется выделять текст силами CSS.</dfn>
+            </p><br>
+            <h2>Медиа</h2>
+            <hr>
+            <h4>Видео</h4><code>a.youtube[href=""]{Название}</code><a class="youtube" href="https://youtu.be/uGlzWZyVrBk">Видео о законах впихуемости</a>
+            <h4>Аудио</h4>
+            <pre><code>.audioplayer>audio[preload='true']>source[src='assets/media/audio.mp3']^.audioplayer__button.play>.audioplayer__button_icon^.audioplayer__timeline>.audioplayer__playhead</code></pre>
+            <p>pug миксин: <br><code>+socals(class="vertical")</code></p><br>
+            <div class="audioplayer">
+              <audio preload="true">
+                <source src="assets/media/audio.mp3"/>
+              </audio>
+              <div class="audioplayer__button play">
+                <div class="audioplayer__button_icon"></div>
+              </div>
+              <div class="audioplayer__timeline">
+                <div class="audioplayer__playhead"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END: layout__body-->
+        <div class="layout__side layout__side_left">
+          <div class="layout__side__top">
+          </div>
+          <div class="layout__side__center">
+          </div>
+          <div class="layout__side__bottom">
+          </div>
+        </div>
+        <!-- END: layout__side-left-->
+        <div class="layout__side layout__side_right">
+          <div class="layout__side__top">
+          </div>
+          <div class="layout__side__center">
+          </div>
+          <div class="layout__side__bottom">
+          </div>
+        </div>
+        <!-- END: layout__side-right-->
+        <div class="layout__footer">
+          <div class="layout__container">
+          </div>
+        </div>
+      </div>
+      <!-- END: layout__wrapper-->
+    </div>
+    <!-- END: layout--><a class="layout__crby" href="https://zephyrlab.ru" target="_blank"><img src="assets/images/zephyr/ZEPHYR_CrBy_Light_01.svg" alt="Сделано в ZEPHYRLAB"></a>
+    <div class="start-page">
+      <div class="start-page__header">
+        <div class="start-page__logo"><a href="/"><img class="logo" src="assets/images/logo-inverse.svg" alt="bar"></a></div>
+        <div class="start-page__menu">
+          <ul>
+            <li><a href="about.html">Читать обо мне</a></li>
+            <li><a href="about.html#do-now">Тренинги и мероприятия</a></li>
+            <li><a href="about.html#feedback">Написать мне</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="start-page__body">
+        <div class="start-page__photo"><img src="assets/images/photo.png" srcset="assets/images/photo@2x.png 2x" alt=""></div>
+        <p class="start-page__title">Всем привет!</p>
+        <p class="start-page__subtitle">Меня зовут Максим Дорофеев.</p>
+        <p class="start-page__text">Я – <span class="marker-2">корпоративный доктор</span>-<br>прокрастинатолог,<br>и моя работа – помогать взрослым дядям<br> и тётям учиться <span class="marker-3">делать</span> все важные<br> рабочие и личные <span class="marker-1">дела </span><br><span class="marker-3">вовремя…</span></p>
+        <div class="start-page__close">Ок, продолжим!</div>
+      </div>
+      <div class="start-page__footer"></div>
+    </div>
+    <!-- END: start-page-->
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      readyjs.push(function(){
+        var scroll = new SmoothScroll('a[href*="#"]', {
+          offset: document.querySelector('.layout__header').offsetHeight
+        });
+        share();
+      });
+      
+    </script>
+    <script>
+      if (readyjs) {
+        document.addEventListener('DOMContentLoaded', function(){
+          for (var i = readyjs.length - 1; i >= 0; i--) {
+            readyjs[i]();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
