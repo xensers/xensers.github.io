@@ -431,7 +431,7 @@ img,
   width: 45.5rem;
   height: 18rem;
   border: .3125rem solid dimgrey;
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-color: #ddd;
   background-position: center bottom;
   -webkit-background-size: cover;
@@ -718,7 +718,7 @@ img,
   bottom: -0.9rem;
   width: 4rem;
   height: 4rem;
-  background: url("/images/weapons/upg_sword.png");
+  background: url("../images/weapons/upg_sword.png");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   -webkit-transform: scaleX(-1) rotate(-15deg);
@@ -729,32 +729,32 @@ img,
 
 .hero_man *:before {
   border: none;
-  background-image: url("/images/skins/man.svg");
+  background-image: url("../images/skins/man.svg");
 }
 
 .hero_boy *:before {
   border: none;
-  background-image: url("/images/skins/boy.svg");
+  background-image: url("../images/skins/boy.svg");
 }
 
 .hero_girl *:before {
   border: none;
-  background-image: url("/images/skins/girl.svg");
+  background-image: url("../images/skins/girl.svg");
 }
 
 .hero_man *:before {
   border: none;
-  background-image: url("/images/skins/man.svg");
+  background-image: url("../images/skins/man.svg");
 }
 
 .hero_niga *:before {
   border: none;
-  background-image: url("/images/skins/niga.svg");
+  background-image: url("../images/skins/niga.svg");
 }
 
 .hero_zombie *:before {
   border: none;
-  background-image: url("/images/skins/zombie.svg");
+  background-image: url("../images/skins/zombie.svg");
 }
 
 .hero_jump .hero__head {
@@ -1102,7 +1102,7 @@ textarea:focus::placeholder {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background: url("/images/icons.svg");
+  background: url("../images/icons.svg");
   background-position: 0 0;
   -webkit-background-size: 10em 10em;
           background-size: 10em;
