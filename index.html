@@ -1,1 +1,274 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: monospace;
+      color: #ecffff;
+      background: #0e1f25;
+      line-height: 1.2;
+    }
+
+    .cube__side, .cube__container {
+      width: 10em;
+      height: 10em;
+    }
+    .cube__container {
+      position: fixed;
+      font-size: 8px;
+      top: 5em;
+      left: 5em;
+      -webkit-transform: rotateX(-25deg) rotateY(25deg);
+              transform: rotateX(-25deg) rotateY(25deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+    .cube__side {
+      position: absolute;
+      padding-top: 5em;
+      width: 10em;
+      height: 10em;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid #22FFF4;
+      background: #0A4E4F;
+    }
+    .cube__back {
+      -webkit-transform: translateZ(-5em) rotateY(180deg);
+              transform: translateZ(-5em) rotateY(180deg);
+    }
+    .cube__front {
+      -webkit-transform: translateZ(5em);
+              transform: translateZ(5em);
+    }
+    .cube__front svg {
+      position: absolute;
+      width: 80%;
+      top: 55%;
+      left: 60%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+    .cube__left {
+      -webkit-transform: translateX(-5em) rotateY(270deg);
+              transform: translateX(-5em) rotateY(270deg);
+    }
+    .cube__right {
+      -webkit-transform: translateX(5em) rotateY(90deg);
+              transform: translateX(5em) rotateY(90deg);
+    }
+    .cube__top {
+      -webkit-transform: translateY(-5em) rotateX(90deg);
+              transform: translateY(-5em) rotateX(90deg);
+    }
+    .cube__bottom {
+      -webkit-transform: translateY(5em) rotateX(270deg);
+              transform: translateY(5em) rotateX(270deg);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: monospace;
+      color: #ecffff;
+      background: #0e1f25;
+      line-height: 1.2;
+    }
+
+    .cube__side, .cube__container {
+      width: 10em;
+      height: 10em;
+    }
+    .cube__container {
+      position: fixed;
+      font-size: 8px;
+      top: 5em;
+      left: 5em;
+      -webkit-transform: rotateX(-25deg) rotateY(25deg);
+              transform: rotateX(-25deg) rotateY(25deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+    .cube__side {
+      position: absolute;
+      padding-top: 5em;
+      width: 10em;
+      height: 10em;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid #22fff4;
+      background: #0a4e4f;
+    }
+    .cube__back {
+      -webkit-transform: translateZ(-5em) rotateY(180deg);
+              transform: translateZ(-5em) rotateY(180deg);
+    }
+    .cube__front {
+      -webkit-transform: translateZ(5em);
+              transform: translateZ(5em);
+    }
+    .cube__front svg {
+      position: absolute;
+      width: 80%;
+      top: 55%;
+      left: 60%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+    .cube__left {
+      -webkit-transform: translateX(-5em) rotateY(270deg);
+              transform: translateX(-5em) rotateY(270deg);
+    }
+    .cube__right {
+      -webkit-transform: translateX(5em) rotateY(90deg);
+              transform: translateX(5em) rotateY(90deg);
+    }
+    .cube__top {
+      -webkit-transform: translateY(-5em) rotateX(90deg);
+              transform: translateY(-5em) rotateX(90deg);
+    }
+    .cube__bottom {
+      -webkit-transform: translateY(5em) rotateX(270deg);
+              transform: translateY(5em) rotateX(270deg);
+    }
+
+    a {
+      color: #ecffff;
+    }
+
+    .content {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      padding: 2rem;
+      background: #0a4e4f;
+    }
+
+    .menu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .menu__item {
+      padding: 1rem 0;
+      border-bottom: 0.06rem solid;
+    }
+    .menu__link {
+      display: block;
+      padding-left: 1.5em;
+      font-size: 1.6rem;
+      text-align: left;
+      text-decoration: none;
+      background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"><g><polygon points="56.8,193.3 0,426.2 433.2,426.2 490,193.3"/><polygon points="433.2,169.6 433.2,130.3 174.2,130.3 131.5,63.8 0,63.8 0,326.3 38.2,169.6 "/></g></svg>') no-repeat;
+      background-size: 1.2em auto;
+      background-position: top left;
+    }
+
+    a {
+      color: #ecffff;
+    }
+
+    .content {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      padding: 2rem;
+      background: #0A4E4F;
+    }
+
+    .menu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .menu__item {
+      padding: 1rem 0;
+      border-bottom: 0.06rem solid;
+    }
+    .menu__link {
+      display: block;
+      padding-left: 1.5em;
+      font-size: 1.6rem;
+      text-align: left;
+      text-decoration: none;
+      background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve"><g><polygon points="56.8,193.3 0,426.2 433.2,426.2 490,193.3"/><polygon points="433.2,169.6 433.2,130.3 174.2,130.3 131.5,63.8 0,63.8 0,326.3 38.2,169.6 "/></g></svg>') no-repeat;
+      background-size: 1.2em auto;
+      background-position: top left;
+    }
+  </style>
+</head>
+<body>
+  <div id="watcher" class="cube__container">
+    <div class="cube__side cube__back"></div>
+    <div class="cube__side cube__left"></div>
+    <div class="cube__side cube__right"></div>
+    <div class="cube__side cube__top"></div>
+    <div class="cube__side cube__bottom"></div>
+    <div class="cube__side cube__front">
+
+    <svg viewBox="0 0 36 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="face" transform="translate(-8.000000, -12.000000)" fill="#000000">
+                <path d="M13.001,14 C14.655,14 16.001,15.346 16.001,17 C16.001,17.553 16.449,18 17.001,18 C17.553,18 18.001,17.553 18.001,17 C18.001,14.243 15.758,12 13.001,12 C10.244,12 8.001,14.243 8.001,17 C8.001,17.553 8.449,18 9.001,18 C9.553,18 10.001,17.553 10.001,17 C10.001,15.346 11.347,14 13.001,14 Z" id="Path"></path>
+                <path d="M27.001,18 C27.553,18 28.001,17.553 28.001,17 C28.001,15.346 29.347,14 31.001,14 C32.655,14 34.001,15.346 34.001,17 C34.001,17.553 34.449,18 35.001,18 C35.553,18 36.001,17.553 36.001,17 C36.001,14.243 33.758,12 31.001,12 C28.244,12 26.001,14.243 26.001,17 C26.001,17.553 26.449,18 27.001,18 Z" id="Path"></path>
+                <path d="M27.001,18 C27.553,18 28.001,17.553 28.001,17 C28.001,15.346 29.347,14 31.001,14 C32.655,14 34.001,15.346 34.001,17 C34.001,17.553 34.449,18 35.001,18 C35.553,18 36.001,17.553 36.001,17 C36.001,14.243 33.758,12 31.001,12 C28.244,12 26.001,14.243 26.001,17 C26.001,17.553 26.449,18 27.001,18 Z" id="Path"></path>
+                <path d="M44.001,22 C44.001,9.869 34.132,0 22.001,0 C9.87,0 0.001,9.869 0.001,22 C0.001,34.131 9.87,44 22.001,44 C24.937,44 27.8,43.409 30.526,42.256 L30.81,42.54 C31.785,43.515 33.065,44.002 34.345,44.002 C35.626,44.002 36.906,43.515 37.881,42.54 L38.588,41.833 C40.279,40.142 40.4543122,37.5516275 39.2103122,35.6176275 C42.0040983,31.9290121 44.001,26.935 44.001,22 Z M22.001,44 C9.8702,44 0.001,34.1308 0.001,22 C0.001,9.8692 9.8702,0 22.001,0 C34.1318,0 44.001,9.8692 44.001,22 C44.001,26.8037 42.1437416,31.7833347 39.2397416,35.6025347 L34.4172118,30.4872733 C34.8154118,29.2310733 35.201,27.786 35.201,26.4 C35.201,25.7917 34.7082,25.3 34.101,25.3 C33.4938,25.3 33.001,25.7917 33.001,26.4 C33.001,32.4654 28.0664,37.4 22.001,37.4 C15.9356,37.4 11.001,32.4654 11.001,26.4 C11.001,25.7917 10.5082,25.3 9.901,25.3 C9.2938,25.3 8.801,25.7917 8.801,26.4 C8.801,33.6787 14.7223,39.6 22.001,39.6 C23.4156,39.6 24.7752,39.3712 26.0534,38.9576 L30.3876891,42.2746839 C27.9137891,43.2063839 25.5176859,44 22.001,44 Z M37.174,40.419 L36.467,41.126 C35.296,42.296 33.393,42.295 32.224,41.126 L31.462,40.364 C31.462,40.364 31.462,40.364 31.462,40.364 L27.712,36.614 C28.533,36.166 29.277,35.606 29.979,34.99 C29.999,34.99 30.018,35 30.038,34.999 C30.542,35.301 31.713,36.37 33.524,38.183 L33.64,38.298 C33.835,38.493 34.091,38.591 34.347,38.591 C34.603,38.591 34.859,38.493 35.054,38.298 C35.445,37.907 35.445,37.275 35.054,36.884 L34.939,36.769 C34.303,36.132 33.341,35.169 32.462,34.388 C32.143,34.104 31.799,33.804 31.449,33.548 C31.908,33.031 32.373,32.45 32.783,31.785 L37.153,36.155 C37.181,36.191 37.234,36.257 37.256,36.28 C37.26,36.284 37.265,36.287 37.269,36.292 C38.332,37.467 38.308,39.284 37.174,40.419 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </svg>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <h1>Мои демо:</h1>
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="https://xensers.github.ioamazing-form/" class="menu__link">Красивя форма</a>
+      </li>
+      <li class="menu__item">
+        <a href="https://xensers.github.io/mnogosdelal/" class="menu__link">Верстка проекта   <br>  "Много сделал"</a>
+      </li>
+      <li class="menu__item">
+        <a href="https://xensers.github.io" class="menu__link">Игра "Клавофайтинг" <br> (начальная стадия)</a>
+      </li>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    function watching(event) {
+      let percentX = event.clientX / window.outerWidth;
+      let percentY = event.clientY / window.outerHeight;
+      let degY;
+      let degX;
+
+      degY = 60 * percentX - 8;
+      degX = -60 * percentY + 8;
+
+      requestAnimationFrame(() => {
+        watcher.style.transform = 'rotateX(' + degX + 'deg) rotateY(' + degY + 'deg)';
+      });
+    }
+
+    window.addEventListener('mousemove', watching);
+  </script>
+</body>
+</html>
