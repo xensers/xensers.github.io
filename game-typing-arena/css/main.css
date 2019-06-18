@@ -99,6 +99,7 @@ img,
 
 .layout__header {
   padding: 0 1rem;
+  min-height: 1rem;
 }
 
 .layout__content {
@@ -110,6 +111,7 @@ img,
 
 .layout__footer {
   padding: 0 1rem;
+  min-height: 1rem;
 }
 
 #arena {
@@ -1309,4 +1311,46 @@ textarea:focus::placeholder {
 .zi-2 {
   position: relative;
   z-index: 2;
+}
+
+.scoreboard {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 12rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border: 0.1rem solid #fff;
+  background-color: #222;
+}
+
+.scoreboard__player {
+  padding: 0.2rem;
+  border: 0.06rem solid #fff;
+  -webkit-border-radius: 0.2rem;
+          border-radius: 0.2rem;
+}
+
+.scoreboard__raund {
+  padding: 0.2rem;
+  border: 0.06rem solid #fff;
+  -webkit-border-radius: 0.2rem;
+          border-radius: 0.2rem;
+}
+
+.scoreboard__score {
+  background: #000;
+  color: #F44;
+}
+
+.scoreboard__title {
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
 }
