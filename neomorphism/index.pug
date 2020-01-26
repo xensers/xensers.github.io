@@ -1,0 +1,107 @@
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+    title Neomorphism
+    link(rel="stylesheet" href="fonts/Electronica-Normal/font.css")
+    link(rel="stylesheet" href="fonts/TTNorms/stylesheet.css")
+    link(rel="stylesheet" href="style.css")
+
+  body
+    #app
+      .calculator
+        .header
+          .logo Xiasio
+          .title
+            | Smart skeuomorph
+            br
+            |calculator
+        .display
+          .display__inner
+            .display__outer
+              .display__value
+                span(v-html="display")
+        .separator
+        .buttons
+          .btn.btn_red(@click="clear")
+            .btn__inner
+              .btn__outer
+                span C
+          .btn.btn_orange(@click="sign")
+            .btn__inner
+              .btn__outer
+                span +/-
+          .btn.btn_orange(@click="percent")
+            .btn__inner
+              .btn__outer
+                span %
+          .btn.btn_orange(@click="divide")
+            .btn__inner
+              .btn__outer
+                span ÷
+          .btn(@click="append('7')")
+            .btn__inner
+              .btn__outer
+                span 7
+          .btn(@click="append('8')")
+            .btn__inner
+              .btn__outer
+                span 8
+          .btn(@click="append('9')")
+            .btn__inner
+              .btn__outer
+                span 9
+          .btn.btn_orange(@click="times")
+            .btn__inner
+              .btn__outer
+                span x
+          .btn(@click="append('4')")
+            .btn__inner
+              .btn__outer
+                span 4
+          .btn(@click="append('5')")
+            .btn__inner
+              .btn__outer
+                span 5
+          .btn(@click="append('6')")
+            .btn__inner
+              .btn__outer
+                span 6
+          .btn.btn_orange(@click="minus")
+            .btn__inner
+              .btn__outer
+                span -
+          .btn(@click="append('1')")
+            .btn__inner
+              .btn__outer
+                span 1
+          .btn(@click="append('2')")
+            .btn__inner
+              .btn__outer
+                span 2
+          .btn(@click="append('3')")
+            .btn__inner
+              .btn__outer
+                span 3
+          .btn.btn_orange(@click="add")
+            .btn__inner
+              .btn__outer
+                span +
+          .btn.btn_large(@click="append('0')")
+            .btn__inner
+              .btn__outer
+                span 0
+          .btn(@click="dot")
+            .btn__inner
+              .btn__outer
+                span .
+          .btn.btn_orange(@click="equal")
+            .btn__inner
+              .btn__outer
+                span
+                  | =
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js")
+  script(src="main.js")
